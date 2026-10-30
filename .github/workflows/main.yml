@@ -4,8 +4,8 @@ on:
   push:
     branches: [ main ]
   #是否开始每天8点定时刷课，若要开启请把下面两行注释去掉
-  schedule:
-    - cron: "0 8 * * *" 
+  #schedule:
+  #  - cron: "0 8 * * *" 
     
 jobs: 
   Start:
@@ -30,6 +30,3 @@ jobs:
           CHAOXING_PASSWORD: ${{ secrets.CHAOXING_PASSWORD }}
           CHAOXING_COURSE_LIST: ${{ secrets.CHAOXING_COURSE_LIST }}
         run: python main.py -u 13316182591 -p Subai123 -l 244043740
-        run: python main.py -u 13316182591 -p Subai123 -l 211286183
-        run: python main.py -u 13316182591 -p Subai123 -l 266801180
-        run: python main.py -u 13316182591 -p Subai123 -l 211321520
