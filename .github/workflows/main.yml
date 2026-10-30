@@ -30,3 +30,4 @@ jobs:
           CHAOXING_PASSWORD: ${{ secrets.CHAOXING_PASSWORD }}
           CHAOXING_COURSE_LIST: ${{ secrets.CHAOXING_COURSE_LIST }}
         run: python main.py -u 13316182591 -p Subai123 -l 244043740
+        run: python main.py -u 13316182591 -p Subai123 -l 211286183
